@@ -1,11 +1,21 @@
 package Taller1;
-
+/**
+ * Esta es la clase que representa un libro
+ * @author Cristian Duran M
+ */
 public class Libro {
     private String nome;
     private String edition;
     private int page;
     private boolean onLoan;
 
+    /**
+     * Metodo constructor
+     * @param nome
+     * @param edition
+     * @param page
+     * @param onLoan
+     */
     public Libro(String nome, String edition, int page, boolean onLoan) {
         this.nome = nome;
         this.edition = edition;
@@ -13,34 +23,18 @@ public class Libro {
         this.onLoan = onLoan;
     }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getEdition() {
-        return edition;
-    }
-
-    public void setEdition(String edition) {
-        this.edition = edition;
-    }
-
-    public int getPage() {
-        return page;
-    }
-
-    public void setPage(int page) {
-        this.page = page;
-    }
-
+    /**
+     * Metodo para saber el estado del libro en prestamo
+     * @return
+     */
     public boolean isOnLoan() {
         return onLoan;
     }
 
+    /**
+     * Metodo para cambiar el estado del libro
+     * @param onLoan
+     */
     public void setOnLoan(boolean onLoan) {
         this.onLoan = onLoan;
     }
